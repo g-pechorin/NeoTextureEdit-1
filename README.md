@@ -1,5 +1,8 @@
 # NeoTextureEdit
+
 A graph-based procedural texture editor to create 2d seamless textures for real-time rendering applications.
+
+> `>gradlew run` to launch
 
 NeoTextureEdit is an easy to use graph-based procedural seamless
 texture editor. Using continuous basis functions it can generate
@@ -10,6 +13,9 @@ application startup. But it can also be used to generate off-line
 images.
 
 ## Original
+
+This is a fork attempting to smooth/improve minor details that nobody but me will ever care about.
+
 This is a fork. The original version can be found here:
 http://sourceforge.net/projects/neotextureedit/
 
@@ -27,10 +33,19 @@ from where you start the editor.  This file also contains your pattern
 presets. Deleting this file resets to the factory settings.
 
 # Release Notes
+
 ## Current
 The release notes for the next version.
 
-#### Next:
+#### 0.6.6:
+
+- updated GradleW to work with JDK11
+  - updated the gradle wrapper version
+  - altered the build file to use JDK10
+- removed Kotlin (it was ... hard ... to compile and uneeded)
+- changed ids to match me
+
+#### 0.6.5:
  - Changed the build tool from Ant to Gradle
  - Removed the included dependencies and moved them to Gradle
  - Removed the included logging library in favour of Log4J
